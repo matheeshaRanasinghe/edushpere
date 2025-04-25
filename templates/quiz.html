@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Time!</title>
+    <style>
+		body {
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		background: linear-gradient(120deg, #f0f8ff, #e6f2ff);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 50px;
+	}
+
+	h1 {
+		color: #003366;
+		margin-bottom: 30px;
+	}
+
+	form {
+		background-color: #ffffff;
+		padding: 30px;
+		border-radius: 15px;
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+		width: 100%;
+		max-width: 400px;
+	}
+
+	p {
+		font-size: 18px;
+		color: #333;
+	}
+
+	input[type="text"] {
+		width: 100%;
+		padding: 12px 15px;
+		margin: 10px 0 20px;
+		border: 2px solid #cce0ff;
+		border-radius: 8px;
+		font-size: 16px;
+		transition: border-color 0.3s ease;
+	}
+
+	input[type="text"]:focus {
+		border-color: #3399ff;
+		outline: none;
+	}
+
+	button {
+		background-color: #3399ff;
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 8px;
+		font-size: 16px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+	}
+
+	button:hover {
+		background-color: #267acc;
+	}
+	</style>
+</head>
+<body>
+    <h1>Question {{ number }}</h1>
+    <form action="/submit" method="POST">
+        <p><strong>{{ question }}</strong></p>
+        <input type="text" name="answer" placeholder="Type your answer..." required>
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>
