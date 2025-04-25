@@ -13,7 +13,7 @@
       font-family: "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background-image: linear-gradient(30deg, #42ffd0, #5257ff);
+      background-image: linear-gradient(30deg, #8a90ff, #b5ff8a);
       display: flex;
       flex-direction: column;
       height: 100vh;
@@ -62,15 +62,19 @@
       border-bottom-left-radius: 22px;
     }
 
-    .container {
-      flex: 1;
-      padding: 30px;
-      max-width: 900px;
-      margin: 20px auto;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #ccc;
-    }
+	 .container {
+	  flex: 1;
+	  padding: 30px;
+	  max-width: 900px;
+	  margin: 20px auto;
+	  background: rgba(255, 255, 255, 0.2); /* semi-transparent */
+	  border-radius: 10px;
+	  box-shadow: 0 0 10px #ccc;
+	  backdrop-filter: blur(10px); /* you can increase for stronger blur */
+	  -webkit-backdrop-filter: blur(10px); /* for Safari */
+	  border: 1px solid rgba(255, 255, 255, 0.3); /* optional for glass effect */
+	}
+
 
     .user-info {
       display: flex;
