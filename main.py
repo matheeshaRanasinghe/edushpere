@@ -12,7 +12,7 @@ from langchain.prompts import ChatPromptTemplate
 from get_embedding_function import get_embedding_function
 import wikipedia 
 import requests
-CHROMA_PATH = "chroma"
+CHROMA_PATH = "/tmp/chroma"
 
 app = Flask(__name__)
 global level
