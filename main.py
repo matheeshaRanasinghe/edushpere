@@ -182,7 +182,7 @@ def chat():
 	prompt = prompt_template.format(context=context_text, question=query_text)
 	print(prompt)
     
-	client = genai.Client(api_key="")
+	client = genai.Client(api_key="GOOGLE_API")
 	response = client.models.generate_content(model="gemini-1.5-flash", contents=prompt)
 	print(response.text)
 	return jsonify({'response': response.text})
