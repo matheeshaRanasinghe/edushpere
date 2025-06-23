@@ -7,4 +7,5 @@ wikipedia
 google-generativeai
 langchain
 chromadb
+gunicorn
 
