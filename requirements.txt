@@ -1,0 +1,10 @@
+flask
+pandas
+matplotlib
+numpy
+requests
+wikipedia
+google-generativeai
+langchain
+chromadb
+gunicorn
