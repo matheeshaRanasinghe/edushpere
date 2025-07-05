@@ -8,3 +8,4 @@ google-genai
 langchain
 chromadb
 gunicorn
+langchain-community
